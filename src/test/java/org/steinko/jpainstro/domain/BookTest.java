@@ -14,11 +14,11 @@ public class BookTest {
 	}
 	
 	@Test
-	public void existAPubliser() {
+	public void existATitle() {
 		Book book = new Book();
-		String publisher = "Cool Gay";
-		book.setPublisher(publisher);
-		assertEquals(book.getPublisher(), publisher);
+		String title = "Programimg Java";
+		book.setTitle(title);
+		assertEquals(book.getTitle(), title);
 		
 	}
 	
@@ -28,6 +28,15 @@ public class BookTest {
 		String isbn = "978-82-450-0364-2";
 		book.setIsbn(isbn);
 		assertEquals(book.getIsbn(), isbn);
+		
+	}
+	
+	@Test
+	public void existAPublisher() {
+		Book book = new Book();
+		String publisher = "Askehouge";
+		book.setPublisher(publisher);
+		assertEquals(book.getPublisher(), publisher);
 		
 	}
 

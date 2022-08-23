@@ -1,8 +1,19 @@
 package org.steinko.jpainstro.domain;
 
 public class Book {
+	
+	private String title;
 	private String publisher;
 	private String isbn;
+	
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 
 	public String getIsbn() {
 		return isbn;
