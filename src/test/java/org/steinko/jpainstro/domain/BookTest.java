@@ -21,5 +21,14 @@ public class BookTest {
 		assertEquals(book.getPublisher(), publisher);
 		
 	}
+	
+	@Test
+	public void existIsbn() {
+		Book book = new Book();
+		String isbn = "978-82-450-0364-2";
+		book.setIsbn(isbn);
+		assertEquals(book.getIsbn(), isbn);
+		
+	}
 
 }
